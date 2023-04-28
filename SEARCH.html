@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Searcher</title>
+    <link rel="icon"  href="https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/512x512/magnifying_glass.png" type="image/x-icon" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="loading.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <div class="count-particles"> <span class="js-count-particles">--</span></div>
+    <div class="text">
+      <h1 class="animated bounceInDown" id="wTag">Something went wrong! Please reload</h1>
+      <h2 class="animated bounceInDown" id="en">Enter code to search: <input name="inp1" id="usernmIn"></h2>
+      <h3 class="animated bounceInDown" id="timTag"></h3>
+      <h2 class="animated bounceInDown">
+        <a class="animated bounceInDown button" href="javascript:buttonRun()" style=text-decoration:none;>>Search</a>
+      </h2>
+    </div>
+    <div id="pgRef"></div>
+      <script>
+      var input = document.getElementById("usernmIn");
+      input.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+          event.preventDefault();
+          buttonRun();
+        }
+      });
+      </script>
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js">
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="script.js"></script>
+      <script src="https://threejs.org/examples/js/libs/stats.min.js">
+      </script>
+  </body>
+</html>

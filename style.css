@@ -1,0 +1,43 @@
+canvas {
+  display: block;
+}
+body{ 
+  margin:0; font:normal 75% Arial, Helvetica, sans-serif; } 
+
+#particles-js{ 
+  position:absolute; 
+  width: 100%; 
+  height: 100%; 
+  background-color: #000000; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: 50% 50%; 
+  } 
+.button {
+  transition: 0.25s;
+  color: #fff;
+}
+
+button:focus,
+.button:hover{
+	color:#000000;
+  transition: 0.25s;
+}
+
+.text {
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%,-50%);
+	color: rgb(255, 255, 255);
+	max-width: 90%;
+	padding: 2em 3em;
+	background: rgba(255, 131, 236, 0.786);
+	font-family: 'Helvetica', sans-serif;
+}
+
+h1 {
+	font-size: 2.25em;
+	font-weight: 700;
+	letter-spacing: -1px;
+}
